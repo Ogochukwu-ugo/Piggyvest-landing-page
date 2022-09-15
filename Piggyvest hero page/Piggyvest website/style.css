@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: unset;
+}
+
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: rgb(178, 175, 175);
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* when navigation is clicked*/
+
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* State when the navbar is collapsed*/
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+.my-menudropdown {
+  display: inline-block;
+  text-align: center;
+  left: -100px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown-toggle::after {
+  content: none;
+}
+#toggleMobileMenu {
+  width: 100%;
+}
+
+#navmain {
+  box-shadow: 1px 2px rgb(214, 213, 213, 0.35);
+}
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 16px;
+  }
+  .container nav {
+    width: 80%;
+  }
+  #navsbtns {
+    margin-right: -10px;
+  }
+
+  #navsbtns .btn {
+    width: 100%;
+  }
+
+  #navsbtns .nav-link .btn-dark {
+    margin-top: 12px;
+  }
+
+  .my-menudropdown {
+    display: inline-block;
+    text-align: center;
+    left: -100px;
+  }
+}
+.nav-link {
+  margin: 4px 10px;
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.collapse {
+  margin-left: 50px;
+}
+
+#navsbtns {
+  width: 100%;
+  margin-left: 10px;
+}
+.btn-dark {
+  width: 180px;
+  height: 40px;
+  font-size: medium;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.btn.btn-dark:hover {
+  background-color: rgb(66, 66, 250);
+}
+
+.btn-outline-dark {
+  width: 100px;
+  height: 40px;
+  font-size: medium;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.btn.btn-outline-dark:hover {
+  color: rgb(66, 66, 250);
+  border-color: rgb(66, 66, 250);
+  background-color: transparent;
+}
+
+.dropdown-item {
+  display: inline-flex;
+  font-size: smaller;
+  font-weight: 500;
+  margin: 4px;
+}
+.dropdown-item:hover {
+  background: rgb(240, 234, 234, 0.45);
+}
+
+#savings-section {
+  margin-left: 3px;
+}
+
+#naira-section {
+  margin-left: -10px;
+}
+
+.dropdown-item span {
+  margin-top: 2px;
+  margin-left: 8px;
+}
+
+.d-inline-flex {
+  padding: 8px;
+  margin: 2px;
+}
